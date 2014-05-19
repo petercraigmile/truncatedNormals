@@ -4,7 +4,9 @@ Written with <a href="http://www.stat.osu.edu/~hans/">Chris Hans</a>.
 
 Email questions about the code to pfc &lt;AT&gt; stat.osu.edu
 
-An R package with functions for univariate truncated normal distributions
+An R package with functions for univariate truncated normal distributions.
+
+The R package itself is contained in the folder `truncatedNormals`.
 
 
 ### Installation
