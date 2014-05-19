@@ -1,0 +1,11 @@
+Package: truncatedNormals
+Version: 0.6
+Date: 2014-05-19
+Title: R functions for truncated univariate normal distributions
+Author: Christopher Hans and Peter F. Craigmile 
+Maintainer: Peter F. Craigmile <pfc@stat.osu.edu>
+Depends: R (>= 2.8)
+Description: R functions to simulate from and calculate densities and probabilities for univariate truncated normal distributions (left, right or interval truncated).  Supported by the National Science Foundation under award number DMS-0604963.
+License: GPL-3
+URL: http://www.r-project.org, http://www.stat.osu.edu/~pfc/
+
