@@ -113,7 +113,7 @@ rnorm_truncated (double *sample,  int *n, double *mu,
  int		k;
  int		change;
  double	a, b;
- double	logt1 = log(0.150), logt2 = log(2.18), t3 = 0.725, t4 = 0.45;
+ double	logt1 = log(0.150), logt2 = log(2.18);
  double	z, tmp, lograt;
 
  GetRNGstate();
@@ -159,7 +159,7 @@ rnorm_truncated (double *sample,  int *n, double *mu,
 
 	lograt = dnorm(a, 0.0, 1.0, 1) - dnorm(b, 0.0, 1.0, 1);
 	if(lograt <= logt2) z = unif_rs(a,b);
-	else if((lograt > logt1) && (a < t3)) z = half_norm_rs(a,b);
+	else if((lograt > logt1) && (a < 0.725)) z = half_norm_rs(a,b);
 	else z = exp_rs(a,b);
 	if(change) z = -z;
     }
@@ -184,7 +184,7 @@ rnorm_trunc (double mu, double sigma, double lower, double upper)
 {
  int	change;
  double	a, b;
- double	logt1 = log(0.150), logt2 = log(2.18), t3 = 0.725, t4 = 0.45;
+ double	logt1 = log(0.150), logt2 = log(2.18);
  double	z, tmp, lograt;
 
  change = 0;
@@ -226,7 +226,7 @@ rnorm_trunc (double mu, double sigma, double lower, double upper)
      
      lograt = dnorm(a, 0.0, 1.0, 1) - dnorm(b, 0.0, 1.0, 1);
      if(lograt <= logt2) z = unif_rs(a,b);
-     else if((lograt > logt1) && (a < t3)) z = half_norm_rs(a,b);
+     else if((lograt > logt1) && (a < 0.725)) z = half_norm_rs(a,b);
      else z = exp_rs(a,b);
      if(change) z = -z;
    }
