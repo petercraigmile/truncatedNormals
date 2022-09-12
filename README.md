@@ -11,21 +11,13 @@ The R package itself is contained in the folder `truncatedNormals`.
 
 ### Installation
 
-For Mac OS and Linux, make sure you have the C and fortran compilers
-installed.  After installing the `devtools` R package type
+Please, make sure you have C compilers installed for your version of
+R.  Then, after installing the `devtools` R package, you can install
+this R package using
 
 ```
-devtools::install_github("truncatedNormals", user="petercraigmile", subdir="truncatedNormals") 
+devtools::install_github("petercraigmile/truncatedNormals/truncatedNormals") 
 ```
-
-For windows, download the file <a href="https://github.com/petercraigmile/truncatedNormals/raw/master/releases/current/truncatedNormals.zip">truncatedNormals.zip</a> from the `releases` folder.    Then:
-
-1. Open the R gui, by doubling clicking on the R icon.
-
-2. Click on the `Packages` menu and select `Install package(s) from local zip files...`.  Find the zip file and press `Open`.
-
-3. Your R package will be installed.
-
 
 After installation, type `library(truncatedNormals)` to use the R library.
 
