@@ -11,7 +11,7 @@ The R package itself is contained in the folder `truncatedNormals`.
 
 ### Installation
 
-Please, make sure you have C compilers installed for your version of
+Please, make sure you have a C compiler installed for your version of
 R.  Then, after installing the `devtools` R package, you can install
 this R package using
 
